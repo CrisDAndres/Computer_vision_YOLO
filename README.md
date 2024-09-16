@@ -1,4 +1,4 @@
-# COMPUTER VISION: Object Detection with YOLOv5 and OpenCV
+# COMPUTER VISION: Object Detection and counting with YOLOv5 and OpenCV
 
 <p align="center">
   <img src="img/image.jpg" alt="Computer Vision image">
@@ -17,12 +17,25 @@ The project consists of the following files:
 
 - ``data/``: Folder containing the video downloaded from [pixabay](https://pixabay.com/) for object detection.
 - ``img/``: Folder containing images for the project.
+- ``coordinates.py``: Python script to manually define a polygon within the capture and get the coordinates to use in the ``detect.py`` script. A count of the objects within the defined polygon is performed. *[Code source](https://www.youtube.com/watch?v=sy8uRDZw8pk&t=20s)*
 - ``detect.py``: Python script for object detection and YOLOv5 model inference, using the pre-trained file *yolov5n.pt*.
 - ``yolov5n.pt``: Pre-trained YOLO model used for object detection.
 
 ## Project aim 🎯
 
 The goal of this project is to process the video, detect objects using the YOLO model (focusing on cars and buses), draw bounding boxes and labels for each detected object, and display these on the screen. Additionally, it counts the number of cars and buses entering a specified bounded polygon in real time.
+
+## Running instructions 💻
+
+To run this project on your local machine, follow the steps below:
+
+1. Clone this repository on your local machine.
+2. Install the required dependencies by running ``pip install opencv-python torch numpy matplotlib``.
+3. Make sure you have the data folder and the YOLO model *(yolov5n.pt)* in the same environment as the python scripts. 
+4. Run the *coordinates.py* script (run in the terminal: ``python coordinates.py``) and click on the video to draw a polygon.
+5. Run the *detect.py* script (run in the terminal: ``python detect.py``).
+6. Press ‘q’ to close the video and stop the execution.
+7. The video will appear showing the bounding boxes of the detected objects, their scores and the counting inside the polygon.
 
 ## Tech Stack 🛠️
 
@@ -44,8 +57,11 @@ An open-source computer vision and machine learning library used for video handl
 
 ### To do ⚙️
 
-- [x] 
-- [x] 
+- [ ] **Train the YOLOv5 model with newly tagged (annotated) images**. This involves providing the model with a dataset of images in which objects of interest are labelled, so that YOLOv5 can learn how to recognise these objects in unseen data.
+
+## Vídeo Demo 📹
+
+
 
 ## Contact 📧
 If you have any questions or suggestions about this project, please feel free to contact me. You can get in touch with me through my social media channels.
