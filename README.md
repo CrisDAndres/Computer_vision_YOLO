@@ -17,7 +17,7 @@ The project consists of the following files:
 
 - ``data/``: Folder containing the video downloaded from [pixabay](https://pixabay.com/) for object detection.
 - ``img/``: Folder containing images for the project.
-- ``coordinates.py``: Python script to manually define a polygon within the capture and get the coordinates to use in the ``detect.py`` script. A count of the objects within the defined polygon is performed. *[Code source](https://www.youtube.com/watch?v=sy8uRDZw8pk&t=20s)*
+- ``coordinates.py``: Python script to manually define a polygon within the capture and get the coordinates to use in the *detect.py* script. A count of the objects within the defined polygon is performed. *[Code source](https://www.youtube.com/watch?v=sy8uRDZw8pk&t=20s)*
 - ``detect.py``: Python script for object detection and YOLOv5 model inference, using the pre-trained file *yolov5n.pt*.
 - ``yolov5n.pt``: Pre-trained YOLO model used for object detection.
 
