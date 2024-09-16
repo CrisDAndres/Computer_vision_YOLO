@@ -7,9 +7,11 @@
 
 ## Project description 📋
 
-This project implements real-time object detection using the **YOLO (You Only Look Once)** model, an advanced algorithm that applies deep learning techniques to object detection. YOLO uses **convolutional neural networks (CNNs)** to identify and localise objects in images or videos. Developed in Python, the solution uses the **ultralytics** library to run the YOLO model and **OpenCV *(cv2)*** for video capture and image processing.
+This project implements real-time object detection using the **YOLO (You Only Look Once)** model, an advanced algorithm that applies deep learning techniques to object detection. Specifically, this project utilizes the YOLOv5 nano version, which is optimized for speed and efficiency, making it suitable for real-time applications. YOLO uses **convolutional neural networks (CNNs)** to identify and localise objects in images or videos.
 
-**OpenCV** is an open-source computer vision library offering a wide range of functions and algorithms for image and video processing. In the context of YOLO, OpenCV is used to handle input images, perform pre-processing, and visually display object detections on the output.
+Developed in Python, the solution uses the **ultralytics** library to run the YOLO model and **OpenCV *(cv2)*** for video capture and image processing.
+
+**OpenCV** is an open-source computer vision library offering a wide range of functions and algorithms for image and video processing. In the context of YOLOv5, OpenCV is used to handle input images, perform pre-processing, and visually display object detections on the output.
 
 ## Project structure 📂
 
