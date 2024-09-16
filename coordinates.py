@@ -37,7 +37,7 @@ class Coordinates:
 
 
 if __name__ == '__main__':
-    video_path = 'cars.mp4'
+    video_path = 'data/cars.mp4'
     c = Coordinates(video_path)
     
 # run in the terminal: python -B coordinates.py 

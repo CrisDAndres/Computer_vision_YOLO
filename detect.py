@@ -123,7 +123,7 @@ def detector(cap: object):
     cv2.destroyAllWindows()
         
 if __name__ == '__main__':
-    video_path = 'cars.mp4'
+    video_path = 'data/cars.mp4'
     cap = cv2.VideoCapture(video_path) 
     detector(cap)
     
